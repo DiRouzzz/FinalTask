@@ -24,9 +24,6 @@ export class ListItem extends Component {
 		this.$rootElement.appendChild(btnDelete);
 
 		btnDelete.addEventListener('click', () => {
-			console.log('id', this.state.id);
-			console.log('amount', this.state.amount);
-
 			this.props.onDelete(this.state.id, this.state.amount);
 		});
 	}
